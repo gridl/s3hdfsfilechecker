@@ -3,7 +3,7 @@ from datetime import datetime, time, timedelta
 import boto
 import botocore
 
-hdfs_url1 = '/data/managed/acxiom/mt_email_response_2*'
+hdfs_url1 = '/data/*'
 hdfs_url='/Users/vsubr2/Projects/s3hdfschecker'
 hdfs = subprocess.check_output('ls -la ' + hdfs_url , shell=True)
 #hdfs1 = subprocess.check_output('hadoop fs -ls ' + hdfs_url +'''| awk '{timestamp= $8 $6  "  "  $7;print timestamp}' | tail -1'''  , shell=True)
