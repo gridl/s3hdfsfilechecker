@@ -12,7 +12,7 @@ def s3watch():
     s3 = boto.connect_s3()
     #exists = False
     print s3
-    bucket_name = 'inbound-datascience-adhoc'
+    bucket_name = 'inbound-adhoc'
     bucket = s3.get_bucket(bucket_name)
     # go through the list of files
     bucket_list = bucket.list()
